@@ -276,7 +276,7 @@ shinyServer(function(input, output, session) {
       argsForTp <- list(documents = docsForTp, metadata = metadataForTp, lowercase = input$tpLowercase,
                         removestopwords = input$tpRemovestop, removenumbers = input$tpRemovenum, removepunctuation = input$tpRemovepunc,
                         stem = input$tpStem, wordLengths = c(3, Inf), sparselevel = input$tpSparselevel, language = input$tpLang,
-                        onlycharacter = input$tpOnlychar, striphtml = input$tpStriphtml, customstopwords = NULL, onlytxtfiles = TRUE)
+                        onlycharacter = input$tpOnlychar, striphtml = input$tpStriphtml, customstopwords = NULL)
 
       withProgress(message = "Running textProcessor, please wait...", {
         setProgress(0.5)
